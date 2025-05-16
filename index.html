@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Button Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #253439;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      user-select: none;
+      margin-bottom: 10px;
+    }
+
+    #logo-img {
+      width: 300px;
+      height: auto;
+      margin-bottom: 10px; /* Smaller gap to buttons */
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 280px;
+      align-items: center;
+    }
+
+    .main-btn {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      width: 100%;
+      padding: 22px 20px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: 'Katibeh', cursive;
+      border: none;
+      border-radius: 8px;
+      color: #253439;
+      background-color: #e0e0e0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .main-btn:hover {
+      background-color: #c0c0c0;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    }
+
+    @media (max-width: 375px) {
+      #logo-img {
+        width: 220px;
+      }
+      .main-btn {
+        font-size: 1.3rem;
+        padding: 18px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="image.png" alt="Mesle logo" id="logo-img" />
+    </header>
+
+    <div class="buttons">
+      <a href="pardizaineri.html" class="main-btn" target="_blank">Par Dizaneri</a>
+      <a href="parlogo.html" class="main-btn" target="_blank">Par Logo</a>
+      <a href="pardizainaterpiem.html" class="main-btn" target="_blank">Par Dizaina tērpiem</a>
+    </div>
+  </div>
+</body>
+</html>

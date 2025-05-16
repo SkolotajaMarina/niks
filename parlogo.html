@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Centered Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #253439;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    #logo-img {
+      width: 320px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .title-link {
+      font-size: 2rem;
+      color: #e0e0e0;
+      text-decoration: none;
+      margin-bottom: 30px;
+      transition: color 0.3s ease;
+    }
+
+    .title-link:hover {
+      color: #a0c8ff;
+    }
+
+    .content-area {
+      font-size: 1.4rem;
+      color: #e0e0e0;
+      padding: 20px;
+      max-width: 320px;
+      margin-bottom: 40px;
+      font-family: 'Katibeh', cursive;
+    }
+
+    @media (max-width: 375px) {
+      #logo-img {
+        width: 240px;
+      }
+      .title-link {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="image.png" alt="Mesle logo" id="logo-img" />
+    </header>
+
+    <div class="title-link">Par Logo</div>
+
+    <div class="content-area">
+      <p>Logotips “Mesle” izceļas ar elegantu un romantisku dizainu. Florālie, mežģīnēm līdzīgie ornamenti piešķir tam sievišķīgu un izsmalcinātu noskaņu, savukārt rokraksta stila burti rada personisku un radošu iespaidu. Krāsu gamma ir atturīga un klasiska, kas norāda uz kvalitāti un gaumīgu stilu. Tas lieliski piestāv zīmolam, kas saistīts ar modi, tekstilu vai rokdarbiem.</p>
+    </div>
+  </div>
+</body>
+</html>

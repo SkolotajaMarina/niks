@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Centered Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: #253439;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    #main-logo {
+      width: 320px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .title-link {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #e0e0e0;
+      text-decoration: none;
+    }
+
+    .title-link:hover {
+      color: #a0c8ff;
+    }
+
+    .content-area {
+      font-size: 1.4rem;
+      font-family: 'Katibeh', cursive;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+
+    .bottom-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .bottom-images img {
+      width: 280px;
+      height: auto;
+      border: 2px solid #444;
+    }
+
+    @media (max-width: 600px) {
+      #main-logo {
+        width: 240px;
+      }
+      .title-link {
+        font-size: 1.5rem;
+      }
+      .bottom-images {
+        flex-direction: column;
+        align-items: center;
+      }
+      .bottom-images img {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="image.png" alt="Galvenais logotips (pārbaudi image.png)" id="main-logo" />
+
+    <div class="title-link">Dizainera tērpi</div>
+
+    <div class="content-area">
+      <p>Viņas iedvesmas avots ir renesanses laika maskas un apģērbi ar mežģīņu akcentiem. Sievišķība, skaistums un greznība – vai jaunās sievietes būtība vai tikai sabiedrības acīm demonstrēts tēls?</p>
+      <p>Viņa radīja apģērba komplektu, kas veidots no melnām džinsu biksēm ar sarkaniem mežģīņu akcentiem bikšu galos un topiņa, kas darināts no sarkanām mežģīnēm un melna atlasa auduma.</p>
+      <p>Viņasprāt, ilgtspēja ir svarīga, lai masku varētu nēsāt ikdienā un tai būtu labs materiāls un kvalitāte. Neskatoties uz to, ka tērps rada iespaidu, ka tā valkātājs ir sievišķīgs un noslēpumains, tas tomēr ir tikai priekšstats un tiek īstenota maskas funkcija, jo patiesība slēpjas cilvēka iekšējā pasaulē.</p>
+    </div>
+
+    <!-- Images side-by-side below the text -->
+    <div class="bottom-images">
+      <img src="photo2.jpg" alt="photo2.jpg — pārbaudi vai fails eksistē" />
+      <img src="photo1.jpg" alt="photo1.jpg — pārbaudi vai fails eksistē" />
+    </div>
+  </div>
+</body>
+</html>
