@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>Button Layout</title>
+  <title>Mesle</title>
   <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet" />
   <style>
-    body, html {
+    html, body {
       margin: 0;
       padding: 0;
       height: 100%;
@@ -14,11 +14,11 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #e0e0e0;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
     }
 
     .container {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -36,7 +36,7 @@
     #logo-img {
       width: 300px;
       height: auto;
-      margin-bottom: 10px; /* Smaller gap to buttons */
+      margin-bottom: 10px;
     }
 
     .buttons {
@@ -72,6 +72,14 @@
       box-shadow: 0 6px 12px rgba(0,0,0,0.25);
     }
 
+    footer {
+      text-align: center;
+      padding: 16px;
+      background-color: #f1f1f1;
+      color: #444;
+      font-size: 14px;
+    }
+
     @media (max-width: 375px) {
       #logo-img {
         width: 220px;
@@ -86,14 +94,19 @@
 <body>
   <div class="container">
     <header>
-      <img src="image.png" alt="Mesle logo" id="logo-img" />
+      <img src="image1.png" alt="Mesle logo" id="logo-img" />
     </header>
 
     <div class="buttons">
-      <a href="pardizaineri.html" class="main-btn" target="_blank">Par Dizaneri</a>
-      <a href="parlogo.html" class="main-btn" target="_blank">Par Logo</a>
-      <a href="pardizainaterpiem.html" class="main-btn" target="_blank">Par Dizaina tērpiem</a>
+      <a href="pardizaineri.html" class="main-btn">Par Dizaneri</a>
+      <a href="parlogo.html" class="main-btn">Par Logo</a>
+      <a href="pardizainaterpiem.html" class="main-btn">Par Dizaina tērpiem</a>
     </div>
   </div>
+
+  <footer>
+    Mājaslapas izstrādātāja: Niks Ozoliņš © 2025
+  </footer>
 </body>
 </html>
+
