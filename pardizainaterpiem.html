@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>Centered Layout</title>
+  <title>Par Dizainera tērpiem</title>
   <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet" />
   <style>
     body, html {
@@ -55,12 +55,33 @@
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
+      margin-bottom: 20px;
     }
 
     .bottom-images img {
       width: 280px;
       height: auto;
       border: 2px solid #444;
+    }
+
+    .back-button {
+      margin-top: 10px;
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 6px 12px;
+      background-color: #ffffff;
+      color: #253439;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #ffffff;
     }
 
     @media (max-width: 600px) {
@@ -82,7 +103,7 @@
 </head>
 <body>
   <div class="container">
-    <img src="image.png" alt="Galvenais logotips (pārbaudi image.png)" id="main-logo" />
+    <img src="image1.png" alt="Galvenais logotips" id="main-logo" />
 
     <div class="title-link">Dizainera tērpi</div>
 
@@ -92,10 +113,15 @@
       <p>Viņasprāt, ilgtspēja ir svarīga, lai masku varētu nēsāt ikdienā un tai būtu labs materiāls un kvalitāte. Neskatoties uz to, ka tērps rada iespaidu, ka tā valkātājs ir sievišķīgs un noslēpumains, tas tomēr ir tikai priekšstats un tiek īstenota maskas funkcija, jo patiesība slēpjas cilvēka iekšējā pasaulē.</p>
     </div>
 
-    <!-- Images side-by-side below the text -->
+    <!-- Attēli zem teksta -->
     <div class="bottom-images">
-      <img src="photo2.jpg" alt="photo2.jpg — pārbaudi vai fails eksistē" />
-      <img src="photo1.jpg" alt="photo1.jpg — pārbaudi vai fails eksistē" />
+      <img src="photo2.jpg" alt="photo2" />
+      <img src="photo1.jpg" alt="photo1" />
+    </div>
+
+    <!-- Mazā poga -->
+    <div class="back-button">
+      <a href="index.html">⬅ Sākumlapa</a>
     </div>
   </div>
 </body>
